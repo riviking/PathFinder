@@ -1,0 +1,702 @@
+[
+ {
+  "_id": {
+   "$oid": "b20000000000000000000001"
+  },
+  "title": "Software Engineer Intern",
+  "company": "TechNova",
+  "description": "Work with the engineering team on real product features. You will write code, review pull requests and learn the team's tools.",
+  "categoryId": {
+   "$oid": "b10000000000000000000001"
+  },
+  "workMode": "HYBRID",
+  "location": "Colombo",
+  "compensation": "PAID",
+  "compensationDetail": "LKR 45,000 per month",
+  "duration": "6 months",
+  "deadline": {
+   "$date": "2026-11-15T18:29:59Z"
+  },
+  "applicationLink": null,
+  "applicationEmail": "careers@technova.example.com",
+  "applicationInstructions": "Send your CV and a short cover letter. Mention the internship title.",
+  "eligibleYears": [
+   3,
+   4
+  ],
+  "eligibleFaculties": [
+   "Faculty A",
+   "Faculty B"
+  ],
+  "status": "PUBLISHED",
+  "createdBy": {
+   "$oid": "a10000000000000000000001"
+  },
+  "createdByName": "CGU Admin",
+  "createdByRole": "ADMIN",
+  "createdAt": {
+   "$date": "2026-10-01T09:00:00Z"
+  },
+  "updatedAt": {
+   "$date": "2026-10-02T09:00:00Z"
+  },
+  "publishedAt": {
+   "$date": "2026-10-21T09:00:00Z"
+  },
+  "closedAt": null,
+  "targetedCount": 4,
+  "viewedCount": 4
+ },
+ {
+  "_id": {
+   "$oid": "b20000000000000000000002"
+  },
+  "title": "Frontend Developer Intern",
+  "company": "WebCore",
+  "description": "Work with the engineering team on real product features. You will write code, review pull requests and learn the team's tools.",
+  "categoryId": {
+   "$oid": "b10000000000000000000001"
+  },
+  "workMode": "REMOTE",
+  "location": "Remote",
+  "compensation": "PAID",
+  "compensationDetail": "LKR 40,000 per month",
+  "duration": "3 months",
+  "deadline": {
+   "$date": "2026-11-21T18:29:59Z"
+  },
+  "applicationLink": "https://webcore.example.com/internships/frontend",
+  "applicationEmail": null,
+  "applicationInstructions": "Send your CV and a short cover letter. Mention the internship title.",
+  "eligibleYears": [
+   2,
+   3,
+   4
+  ],
+  "eligibleFaculties": [
+   "Faculty A"
+  ],
+  "status": "PUBLISHED",
+  "createdBy": {
+   "$oid": "a10000000000000000000003"
+  },
+  "createdByName": "Staff Two",
+  "createdByRole": "STAFF",
+  "createdAt": {
+   "$date": "2026-09-30T09:00:00Z"
+  },
+  "updatedAt": {
+   "$date": "2026-10-01T09:00:00Z"
+  },
+  "publishedAt": {
+   "$date": "2026-10-20T09:00:00Z"
+  },
+  "closedAt": null,
+  "targetedCount": 4,
+  "viewedCount": 4
+ },
+ {
+  "_id": {
+   "$oid": "b20000000000000000000003"
+  },
+  "title": "Backend Developer Intern",
+  "company": "CodeLabs",
+  "description": "Work with the engineering team on real product features. You will write code, review pull requests and learn the team's tools.",
+  "categoryId": {
+   "$oid": "b10000000000000000000001"
+  },
+  "workMode": "ONSITE",
+  "location": "Colombo",
+  "compensation": "NOT_STATED",
+  "compensationDetail": null,
+  "duration": "6 months",
+  "deadline": {
+   "$date": "2026-11-04T18:29:59Z"
+  },
+  "applicationLink": null,
+  "applicationEmail": "hr@codelabs.example.com",
+  "applicationInstructions": "Send your CV and a short cover letter. Mention the internship title.",
+  "eligibleYears": [
+   3,
+   4
+  ],
+  "eligibleFaculties": [
+   "Faculty A",
+   "Faculty B"
+  ],
+  "status": "PUBLISHED",
+  "createdBy": {
+   "$oid": "a10000000000000000000002"
+  },
+  "createdByName": "Staff One",
+  "createdByRole": "STAFF",
+  "createdAt": {
+   "$date": "2026-09-29T09:00:00Z"
+  },
+  "updatedAt": {
+   "$date": "2026-09-30T09:00:00Z"
+  },
+  "publishedAt": {
+   "$date": "2026-10-19T09:00:00Z"
+  },
+  "closedAt": null,
+  "targetedCount": 4,
+  "viewedCount": 2
+ },
+ {
+  "_id": {
+   "$oid": "b20000000000000000000004"
+  },
+  "title": "QA Engineer Intern",
+  "company": "TestPro",
+  "description": "Work with the engineering team on real product features. You will write code, review pull requests and learn the team's tools.",
+  "categoryId": {
+   "$oid": "b10000000000000000000001"
+  },
+  "workMode": "HYBRID",
+  "location": "Gampaha",
+  "compensation": "UNPAID",
+  "compensationDetail": null,
+  "duration": "4 months",
+  "deadline": {
+   "$date": "2026-11-28T18:29:59Z"
+  },
+  "applicationLink": "https://testpro.example.com/apply",
+  "applicationEmail": null,
+  "applicationInstructions": "Send your CV and a short cover letter. Mention the internship title.",
+  "eligibleYears": [
+   2,
+   3
+  ],
+  "eligibleFaculties": [],
+  "status": "PUBLISHED",
+  "createdBy": {
+   "$oid": "a10000000000000000000003"
+  },
+  "createdByName": "Staff Two",
+  "createdByRole": "STAFF",
+  "createdAt": {
+   "$date": "2026-09-28T09:00:00Z"
+  },
+  "updatedAt": {
+   "$date": "2026-09-29T09:00:00Z"
+  },
+  "publishedAt": {
+   "$date": "2026-10-18T09:00:00Z"
+  },
+  "closedAt": null,
+  "targetedCount": 4,
+  "viewedCount": 3
+ },
+ {
+  "_id": {
+   "$oid": "b20000000000000000000005"
+  },
+  "title": "AI/ML Intern",
+  "company": "NeuralTech",
+  "description": "Help the team turn data into answers. You will clean data, build simple models or reports and present what you find.",
+  "categoryId": {
+   "$oid": "b10000000000000000000002"
+  },
+  "workMode": "HYBRID",
+  "location": "Colombo",
+  "compensation": "PAID",
+  "compensationDetail": "LKR 60,000 per month",
+  "duration": "6 months",
+  "deadline": {
+   "$date": "2026-12-06T18:29:59Z"
+  },
+  "applicationLink": null,
+  "applicationEmail": "talent@neuraltech.example.com",
+  "applicationInstructions": "Send your CV and a short cover letter. Mention the internship title.",
+  "eligibleYears": [
+   3,
+   4
+  ],
+  "eligibleFaculties": [
+   "Faculty A",
+   "Faculty C"
+  ],
+  "status": "PUBLISHED",
+  "createdBy": {
+   "$oid": "a10000000000000000000002"
+  },
+  "createdByName": "Staff One",
+  "createdByRole": "STAFF",
+  "createdAt": {
+   "$date": "2026-09-27T09:00:00Z"
+  },
+  "updatedAt": {
+   "$date": "2026-09-28T09:00:00Z"
+  },
+  "publishedAt": {
+   "$date": "2026-10-22T09:00:00Z"
+  },
+  "closedAt": null,
+  "targetedCount": 3,
+  "viewedCount": 2
+ },
+ {
+  "_id": {
+   "$oid": "b20000000000000000000006"
+  },
+  "title": "Data Analyst Intern",
+  "company": "DataVision",
+  "description": "Help the team turn data into answers. You will clean data, build simple models or reports and present what you find.",
+  "categoryId": {
+   "$oid": "b10000000000000000000002"
+  },
+  "workMode": "ONSITE",
+  "location": "Colombo",
+  "compensation": "PAID",
+  "compensationDetail": "LKR 50,000 per month",
+  "duration": "3 months",
+  "deadline": {
+   "$date": "2026-11-10T18:29:59Z"
+  },
+  "applicationLink": "https://datavision.example.com/careers/intern",
+  "applicationEmail": "intern@datavision.example.com",
+  "applicationInstructions": "Send your CV and a short cover letter. Mention the internship title.",
+  "eligibleYears": [
+   2,
+   3,
+   4
+  ],
+  "eligibleFaculties": [
+   "Faculty B",
+   "Faculty C"
+  ],
+  "status": "PUBLISHED",
+  "createdBy": {
+   "$oid": "a10000000000000000000001"
+  },
+  "createdByName": "CGU Admin",
+  "createdByRole": "ADMIN",
+  "createdAt": {
+   "$date": "2026-09-26T09:00:00Z"
+  },
+  "updatedAt": {
+   "$date": "2026-09-27T09:00:00Z"
+  },
+  "publishedAt": {
+   "$date": "2026-10-21T09:00:00Z"
+  },
+  "closedAt": null,
+  "targetedCount": 3,
+  "viewedCount": 2
+ },
+ {
+  "_id": {
+   "$oid": "b20000000000000000000007"
+  },
+  "title": "Embedded Systems Intern",
+  "company": "ElectroTech",
+  "description": "Support the hardware team with circuits, microcontrollers and sensors, from the lab bench to a working prototype.",
+  "categoryId": {
+   "$oid": "b10000000000000000000003"
+  },
+  "workMode": "ONSITE",
+  "location": "Kandy",
+  "compensation": "PAID",
+  "compensationDetail": "LKR 45,000 per month",
+  "duration": "6 months",
+  "deadline": {
+   "$date": "2026-12-13T18:29:59Z"
+  },
+  "applicationLink": null,
+  "applicationEmail": "intern@electrotech.example.com",
+  "applicationInstructions": "Send your CV and a short cover letter. Mention the internship title.",
+  "eligibleYears": [
+   3,
+   4
+  ],
+  "eligibleFaculties": [
+   "Faculty C"
+  ],
+  "status": "PUBLISHED",
+  "createdBy": {
+   "$oid": "a10000000000000000000002"
+  },
+  "createdByName": "Staff One",
+  "createdByRole": "STAFF",
+  "createdAt": {
+   "$date": "2026-09-25T09:00:00Z"
+  },
+  "updatedAt": {
+   "$date": "2026-09-26T09:00:00Z"
+  },
+  "publishedAt": {
+   "$date": "2026-10-20T09:00:00Z"
+  },
+  "closedAt": null,
+  "targetedCount": 3,
+  "viewedCount": 2
+ },
+ {
+  "_id": {
+   "$oid": "b20000000000000000000008"
+  },
+  "title": "IoT Engineering Intern",
+  "company": "SmartWave",
+  "description": "Support the hardware team with circuits, microcontrollers and sensors, from the lab bench to a working prototype.",
+  "categoryId": {
+   "$oid": "b10000000000000000000003"
+  },
+  "workMode": "HYBRID",
+  "location": "Colombo",
+  "compensation": "NOT_STATED",
+  "compensationDetail": null,
+  "duration": "5 months",
+  "deadline": {
+   "$date": "2026-12-21T18:29:59Z"
+  },
+  "applicationLink": "https://smartwave.example.com/iot-intern",
+  "applicationEmail": null,
+  "applicationInstructions": "Send your CV and a short cover letter. Mention the internship title.",
+  "eligibleYears": [
+   3,
+   4
+  ],
+  "eligibleFaculties": [
+   "Faculty C"
+  ],
+  "status": "PUBLISHED",
+  "createdBy": {
+   "$oid": "a10000000000000000000003"
+  },
+  "createdByName": "Staff Two",
+  "createdByRole": "STAFF",
+  "createdAt": {
+   "$date": "2026-09-24T09:00:00Z"
+  },
+  "updatedAt": {
+   "$date": "2026-09-25T09:00:00Z"
+  },
+  "publishedAt": {
+   "$date": "2026-10-19T09:00:00Z"
+  },
+  "closedAt": null,
+  "targetedCount": 3,
+  "viewedCount": 2
+ },
+ {
+  "_id": {
+   "$oid": "b20000000000000000000009"
+  },
+  "title": "Network Engineering Intern",
+  "company": "NetSolutions",
+  "description": "Help keep the company network and systems running and secure, with guidance from senior engineers.",
+  "categoryId": {
+   "$oid": "b10000000000000000000004"
+  },
+  "workMode": "ONSITE",
+  "location": "Colombo",
+  "compensation": "PAID",
+  "compensationDetail": "LKR 55,000 per month",
+  "duration": "6 months",
+  "deadline": {
+   "$date": "2026-12-31T18:29:59Z"
+  },
+  "applicationLink": null,
+  "applicationEmail": "jobs@netsolutions.example.com",
+  "applicationInstructions": "Send your CV and a short cover letter. Mention the internship title.",
+  "eligibleYears": [
+   2,
+   3,
+   4
+  ],
+  "eligibleFaculties": [
+   "Faculty A",
+   "Faculty C"
+  ],
+  "status": "PUBLISHED",
+  "createdBy": {
+   "$oid": "a10000000000000000000002"
+  },
+  "createdByName": "Staff One",
+  "createdByRole": "STAFF",
+  "createdAt": {
+   "$date": "2026-09-23T09:00:00Z"
+  },
+  "updatedAt": {
+   "$date": "2026-09-24T09:00:00Z"
+  },
+  "publishedAt": {
+   "$date": "2026-10-18T09:00:00Z"
+  },
+  "closedAt": null,
+  "targetedCount": 3,
+  "viewedCount": 2
+ },
+ {
+  "_id": {
+   "$oid": "b2000000000000000000000a"
+  },
+  "title": "Cybersecurity Intern",
+  "company": "SecureNet",
+  "description": "Help keep the company network and systems running and secure, with guidance from senior engineers.",
+  "categoryId": {
+   "$oid": "b10000000000000000000004"
+  },
+  "workMode": "HYBRID",
+  "location": "Colombo",
+  "compensation": "PAID",
+  "compensationDetail": "LKR 50,000 per month",
+  "duration": "6 months",
+  "deadline": {
+   "$date": "2026-11-26T18:29:59Z"
+  },
+  "applicationLink": null,
+  "applicationEmail": "soc@securenet.example.com",
+  "applicationInstructions": "Send your CV and a short cover letter. Mention the internship title.",
+  "eligibleYears": [
+   3,
+   4
+  ],
+  "eligibleFaculties": [
+   "Faculty A"
+  ],
+  "status": "CLOSED",
+  "createdBy": {
+   "$oid": "a10000000000000000000003"
+  },
+  "createdByName": "Staff Two",
+  "createdByRole": "STAFF",
+  "createdAt": {
+   "$date": "2026-09-22T09:00:00Z"
+  },
+  "updatedAt": {
+   "$date": "2026-09-23T09:00:00Z"
+  },
+  "publishedAt": {
+   "$date": "2026-10-22T09:00:00Z"
+  },
+  "closedAt": {
+   "$date": "2026-10-31T09:00:00Z"
+  },
+  "targetedCount": 3,
+  "viewedCount": 2
+ },
+ {
+  "_id": {
+   "$oid": "b2000000000000000000000b"
+  },
+  "title": "UI/UX Design Intern",
+  "company": "PixelStudio",
+  "description": "Support the design team on screens and prototypes, and learn how designers and developers work together.",
+  "categoryId": {
+   "$oid": "b10000000000000000000005"
+  },
+  "workMode": "REMOTE",
+  "location": "Remote",
+  "compensation": "UNPAID",
+  "compensationDetail": null,
+  "duration": "3 months",
+  "deadline": {
+   "$date": "2026-10-30T18:29:59Z"
+  },
+  "applicationLink": "https://pixelstudio.example.com/join",
+  "applicationEmail": null,
+  "applicationInstructions": "Send your CV and a short cover letter. Mention the internship title.",
+  "eligibleYears": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "eligibleFaculties": [],
+  "status": "PUBLISHED",
+  "createdBy": {
+   "$oid": "a10000000000000000000001"
+  },
+  "createdByName": "CGU Admin",
+  "createdByRole": "ADMIN",
+  "createdAt": {
+   "$date": "2026-09-21T09:00:00Z"
+  },
+  "updatedAt": {
+   "$date": "2026-09-22T09:00:00Z"
+  },
+  "publishedAt": {
+   "$date": "2026-10-12T09:00:00Z"
+  },
+  "closedAt": null,
+  "targetedCount": 2,
+  "viewedCount": 1
+ },
+ {
+  "_id": {
+   "$oid": "b2000000000000000000000c"
+  },
+  "title": "Business Analyst Intern",
+  "company": "BizTech",
+  "description": "Support managers with analysis, reports and process improvement, and learn how a business team plans its work.",
+  "categoryId": {
+   "$oid": "b10000000000000000000006"
+  },
+  "workMode": "ONSITE",
+  "location": "Colombo",
+  "compensation": "PAID",
+  "compensationDetail": "LKR 40,000 per month",
+  "duration": "4 months",
+  "deadline": {
+   "$date": "2026-12-01T18:29:59Z"
+  },
+  "applicationLink": null,
+  "applicationEmail": "bizhr@biztech.example.com",
+  "applicationInstructions": "Send your CV and a short cover letter. Mention the internship title.",
+  "eligibleYears": [
+   3,
+   4
+  ],
+  "eligibleFaculties": [
+   "Faculty B"
+  ],
+  "status": "DRAFT",
+  "createdBy": {
+   "$oid": "a10000000000000000000003"
+  },
+  "createdByName": "Staff Two",
+  "createdByRole": "STAFF",
+  "createdAt": {
+   "$date": "2026-09-20T09:00:00Z"
+  },
+  "updatedAt": {
+   "$date": "2026-09-21T09:00:00Z"
+  },
+  "publishedAt": null,
+  "closedAt": null,
+  "targetedCount": 0,
+  "viewedCount": 0
+ },
+ {
+  "_id": {
+   "$oid": "b2000000000000000000000d"
+  },
+  "title": "Digital Marketing Intern",
+  "company": "MarketPro",
+  "description": "Help plan and publish content and campaigns, and learn how marketing results are measured.",
+  "categoryId": {
+   "$oid": "b10000000000000000000007"
+  },
+  "workMode": "REMOTE",
+  "location": "Remote",
+  "compensation": "NOT_STATED",
+  "compensationDetail": null,
+  "duration": null,
+  "deadline": null,
+  "applicationLink": null,
+  "applicationEmail": null,
+  "applicationInstructions": null,
+  "eligibleYears": [],
+  "eligibleFaculties": [],
+  "status": "DRAFT",
+  "createdBy": {
+   "$oid": "a10000000000000000000002"
+  },
+  "createdByName": "Staff One",
+  "createdByRole": "STAFF",
+  "createdAt": {
+   "$date": "2026-09-19T09:00:00Z"
+  },
+  "updatedAt": {
+   "$date": "2026-09-20T09:00:00Z"
+  },
+  "publishedAt": null,
+  "closedAt": null,
+  "targetedCount": 0,
+  "viewedCount": 0
+ },
+ {
+  "_id": {
+   "$oid": "b2000000000000000000000e"
+  },
+  "title": "Finance Intern",
+  "company": "FinEdge",
+  "description": "Support the finance team with records, reports and reconciliations, and learn month-end close.",
+  "categoryId": {
+   "$oid": "b10000000000000000000008"
+  },
+  "workMode": "ONSITE",
+  "location": "Colombo",
+  "compensation": "PAID",
+  "compensationDetail": "LKR 48,000 per month",
+  "duration": "6 months",
+  "deadline": {
+   "$date": "2027-01-15T18:29:59Z"
+  },
+  "applicationLink": null,
+  "applicationEmail": "people@finedge.example.com",
+  "applicationInstructions": "Send your CV and a short cover letter. Mention the internship title.",
+  "eligibleYears": [
+   3,
+   4
+  ],
+  "eligibleFaculties": [
+   "Faculty B"
+  ],
+  "status": "PUBLISHED",
+  "createdBy": {
+   "$oid": "a10000000000000000000003"
+  },
+  "createdByName": "Staff Two",
+  "createdByRole": "STAFF",
+  "createdAt": {
+   "$date": "2026-09-18T09:00:00Z"
+  },
+  "updatedAt": {
+   "$date": "2026-09-19T09:00:00Z"
+  },
+  "publishedAt": {
+   "$date": "2026-10-18T09:00:00Z"
+  },
+  "closedAt": null,
+  "targetedCount": 2,
+  "viewedCount": 1
+ },
+ {
+  "_id": {
+   "$oid": "b2000000000000000000000f"
+  },
+  "title": "HR Intern",
+  "company": "PeopleFirst",
+  "description": "Support managers with analysis, reports and process improvement, and learn how a business team plans its work.",
+  "categoryId": {
+   "$oid": "b10000000000000000000006"
+  },
+  "workMode": "HYBRID",
+  "location": "Gampaha",
+  "compensation": "NOT_STATED",
+  "compensationDetail": null,
+  "duration": "3 months",
+  "deadline": {
+   "$date": "2027-01-30T18:29:59Z"
+  },
+  "applicationLink": "https://peoplefirst.example.com/intern",
+  "applicationEmail": null,
+  "applicationInstructions": "Send your CV and a short cover letter. Mention the internship title.",
+  "eligibleYears": [
+   2,
+   3
+  ],
+  "eligibleFaculties": [],
+  "status": "PUBLISHED",
+  "createdBy": {
+   "$oid": "a10000000000000000000002"
+  },
+  "createdByName": "Staff One",
+  "createdByRole": "STAFF",
+  "createdAt": {
+   "$date": "2026-09-17T09:00:00Z"
+  },
+  "updatedAt": {
+   "$date": "2026-09-18T09:00:00Z"
+  },
+  "publishedAt": {
+   "$date": "2026-10-22T09:00:00Z"
+  },
+  "closedAt": null,
+  "targetedCount": 2,
+  "viewedCount": 1
+ }
+]

@@ -1,0 +1,58 @@
+[
+ {
+  "_id": {
+   "$oid": "b10000000000000000000001"
+  },
+  "name": "Software & IT",
+  "active": true
+ },
+ {
+  "_id": {
+   "$oid": "b10000000000000000000002"
+  },
+  "name": "Data & Analytics",
+  "active": true
+ },
+ {
+  "_id": {
+   "$oid": "b10000000000000000000003"
+  },
+  "name": "Engineering",
+  "active": true
+ },
+ {
+  "_id": {
+   "$oid": "b10000000000000000000004"
+  },
+  "name": "Networking & IT Support",
+  "active": true
+ },
+ {
+  "_id": {
+   "$oid": "b10000000000000000000005"
+  },
+  "name": "Design",
+  "active": true
+ },
+ {
+  "_id": {
+   "$oid": "b10000000000000000000006"
+  },
+  "name": "Management",
+  "active": true
+ },
+ {
+  "_id": {
+   "$oid": "b10000000000000000000007"
+  },
+  "name": "Marketing",
+  "active": true
+ },
+ {
+  "_id": {
+   "$oid": "b10000000000000000000008"
+  },
+  "name": "Finance & Accounting",
+  "active": true
+ }
+]

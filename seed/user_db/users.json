@@ -1,0 +1,184 @@
+[
+ {
+  "_id": {
+   "$oid": "a10000000000000000000001"
+  },
+  "email": "admin@example.com",
+  "passwordHash": "$2b$10$mdiBMV3DbhmPZeZ/t8ZoCOdxwPXzWEdebHD2Spq2HIimfdLvb/Hi.",
+  "role": "ADMIN",
+  "name": "CGU Admin",
+  "active": true,
+  "createdAt": {
+   "$date": "2026-09-02T09:00:00Z"
+  },
+  "lastLoginAt": null
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000002"
+  },
+  "email": "staff1@example.com",
+  "passwordHash": "$2b$10$mdiBMV3DbhmPZeZ/t8ZoCOdxwPXzWEdebHD2Spq2HIimfdLvb/Hi.",
+  "role": "STAFF",
+  "name": "Staff One",
+  "active": true,
+  "createdAt": {
+   "$date": "2026-09-04T09:00:00Z"
+  },
+  "lastLoginAt": null
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000003"
+  },
+  "email": "staff2@example.com",
+  "passwordHash": "$2b$10$mdiBMV3DbhmPZeZ/t8ZoCOdxwPXzWEdebHD2Spq2HIimfdLvb/Hi.",
+  "role": "STAFF",
+  "name": "Staff Two",
+  "active": true,
+  "createdAt": {
+   "$date": "2026-09-04T09:00:00Z"
+  },
+  "lastLoginAt": null
+ },
+ {
+  "_id": {
+   "$oid": "a1000000000000000000000b"
+  },
+  "email": "student01@example.com",
+  "passwordHash": "$2b$10$mdiBMV3DbhmPZeZ/t8ZoCOdxwPXzWEdebHD2Spq2HIimfdLvb/Hi.",
+  "role": "STUDENT",
+  "name": "Student 01",
+  "active": true,
+  "createdAt": {
+   "$date": "2026-09-23T09:00:00Z"
+  },
+  "lastLoginAt": null
+ },
+ {
+  "_id": {
+   "$oid": "a1000000000000000000000c"
+  },
+  "email": "student02@example.com",
+  "passwordHash": "$2b$10$mdiBMV3DbhmPZeZ/t8ZoCOdxwPXzWEdebHD2Spq2HIimfdLvb/Hi.",
+  "role": "STUDENT",
+  "name": "Student 02",
+  "active": true,
+  "createdAt": {
+   "$date": "2026-09-24T09:00:00Z"
+  },
+  "lastLoginAt": null
+ },
+ {
+  "_id": {
+   "$oid": "a1000000000000000000000d"
+  },
+  "email": "student03@example.com",
+  "passwordHash": "$2b$10$mdiBMV3DbhmPZeZ/t8ZoCOdxwPXzWEdebHD2Spq2HIimfdLvb/Hi.",
+  "role": "STUDENT",
+  "name": "Student 03",
+  "active": true,
+  "createdAt": {
+   "$date": "2026-09-25T09:00:00Z"
+  },
+  "lastLoginAt": null
+ },
+ {
+  "_id": {
+   "$oid": "a1000000000000000000000e"
+  },
+  "email": "student04@example.com",
+  "passwordHash": "$2b$10$mdiBMV3DbhmPZeZ/t8ZoCOdxwPXzWEdebHD2Spq2HIimfdLvb/Hi.",
+  "role": "STUDENT",
+  "name": "Student 04",
+  "active": true,
+  "createdAt": {
+   "$date": "2026-09-26T09:00:00Z"
+  },
+  "lastLoginAt": null
+ },
+ {
+  "_id": {
+   "$oid": "a1000000000000000000000f"
+  },
+  "email": "student05@example.com",
+  "passwordHash": "$2b$10$mdiBMV3DbhmPZeZ/t8ZoCOdxwPXzWEdebHD2Spq2HIimfdLvb/Hi.",
+  "role": "STUDENT",
+  "name": "Student 05",
+  "active": true,
+  "createdAt": {
+   "$date": "2026-09-27T09:00:00Z"
+  },
+  "lastLoginAt": null
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000010"
+  },
+  "email": "student06@example.com",
+  "passwordHash": "$2b$10$mdiBMV3DbhmPZeZ/t8ZoCOdxwPXzWEdebHD2Spq2HIimfdLvb/Hi.",
+  "role": "STUDENT",
+  "name": "Student 06",
+  "active": true,
+  "createdAt": {
+   "$date": "2026-09-28T09:00:00Z"
+  },
+  "lastLoginAt": null
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000011"
+  },
+  "email": "student07@example.com",
+  "passwordHash": "$2b$10$mdiBMV3DbhmPZeZ/t8ZoCOdxwPXzWEdebHD2Spq2HIimfdLvb/Hi.",
+  "role": "STUDENT",
+  "name": "Student 07",
+  "active": true,
+  "createdAt": {
+   "$date": "2026-09-29T09:00:00Z"
+  },
+  "lastLoginAt": null
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000012"
+  },
+  "email": "student08@example.com",
+  "passwordHash": "$2b$10$mdiBMV3DbhmPZeZ/t8ZoCOdxwPXzWEdebHD2Spq2HIimfdLvb/Hi.",
+  "role": "STUDENT",
+  "name": "Student 08",
+  "active": true,
+  "createdAt": {
+   "$date": "2026-09-30T09:00:00Z"
+  },
+  "lastLoginAt": null
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000013"
+  },
+  "email": "student09@example.com",
+  "passwordHash": "$2b$10$mdiBMV3DbhmPZeZ/t8ZoCOdxwPXzWEdebHD2Spq2HIimfdLvb/Hi.",
+  "role": "STUDENT",
+  "name": "Student 09",
+  "active": true,
+  "createdAt": {
+   "$date": "2026-10-01T09:00:00Z"
+  },
+  "lastLoginAt": null
+ },
+ {
+  "_id": {
+   "$oid": "a10000000000000000000014"
+  },
+  "email": "student10@example.com",
+  "passwordHash": "$2b$10$mdiBMV3DbhmPZeZ/t8ZoCOdxwPXzWEdebHD2Spq2HIimfdLvb/Hi.",
+  "role": "STUDENT",
+  "name": "Student 10",
+  "active": true,
+  "createdAt": {
+   "$date": "2026-10-02T09:00:00Z"
+  },
+  "lastLoginAt": null
+ }
+]

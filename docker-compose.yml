@@ -1,0 +1,17 @@
+services:
+  mongo:
+    image: mongo:7
+    container_name: pathfinder-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodata:/data/db
+      - ./seed:/seed:ro
+  mailhog:
+    image: mailhog/mailhog
+    container_name: pathfinder-mailhog
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+volumes:
+  mongodata:

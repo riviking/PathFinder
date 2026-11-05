@@ -1,0 +1,236 @@
+[
+ {
+  "_id": {
+   "$oid": "d10000000000000000000001"
+  },
+  "noticeId": {
+   "$oid": "b20000000000000000000001"
+  },
+  "fileName": "flyer-01.png",
+  "contentType": "image/png",
+  "size": 107429,
+  "description": "Flyer for Software Engineer Intern at TechNova (dummy data)",
+  "uploadedBy": {
+   "$oid": "a10000000000000000000001"
+  },
+  "uploadedAt": {
+   "$date": "2026-10-01T11:00:00Z"
+  }
+ },
+ {
+  "_id": {
+   "$oid": "d10000000000000000000002"
+  },
+  "noticeId": {
+   "$oid": "b20000000000000000000002"
+  },
+  "fileName": "flyer-02.png",
+  "contentType": "image/png",
+  "size": 110824,
+  "description": "Flyer for Frontend Developer Intern at WebCore (dummy data)",
+  "uploadedBy": {
+   "$oid": "a10000000000000000000003"
+  },
+  "uploadedAt": {
+   "$date": "2026-09-30T11:00:00Z"
+  }
+ },
+ {
+  "_id": {
+   "$oid": "d10000000000000000000003"
+  },
+  "noticeId": {
+   "$oid": "b20000000000000000000003"
+  },
+  "fileName": "flyer-03.png",
+  "contentType": "image/png",
+  "size": 105432,
+  "description": "Flyer for Backend Developer Intern at CodeLabs (dummy data)",
+  "uploadedBy": {
+   "$oid": "a10000000000000000000002"
+  },
+  "uploadedAt": {
+   "$date": "2026-09-29T11:00:00Z"
+  }
+ },
+ {
+  "_id": {
+   "$oid": "d10000000000000000000004"
+  },
+  "noticeId": {
+   "$oid": "b20000000000000000000004"
+  },
+  "fileName": "flyer-04.png",
+  "contentType": "image/png",
+  "size": 98954,
+  "description": "Flyer for QA Engineer Intern at TestPro (dummy data)",
+  "uploadedBy": {
+   "$oid": "a10000000000000000000003"
+  },
+  "uploadedAt": {
+   "$date": "2026-09-28T11:00:00Z"
+  }
+ },
+ {
+  "_id": {
+   "$oid": "d10000000000000000000005"
+  },
+  "noticeId": {
+   "$oid": "b20000000000000000000005"
+  },
+  "fileName": "flyer-05.png",
+  "contentType": "image/png",
+  "size": 95227,
+  "description": "Flyer for AI/ML Intern at NeuralTech (dummy data)",
+  "uploadedBy": {
+   "$oid": "a10000000000000000000002"
+  },
+  "uploadedAt": {
+   "$date": "2026-09-27T11:00:00Z"
+  }
+ },
+ {
+  "_id": {
+   "$oid": "d10000000000000000000006"
+  },
+  "noticeId": {
+   "$oid": "b20000000000000000000006"
+  },
+  "fileName": "flyer-06.png",
+  "contentType": "image/png",
+  "size": 112384,
+  "description": "Flyer for Data Analyst Intern at DataVision (dummy data)",
+  "uploadedBy": {
+   "$oid": "a10000000000000000000001"
+  },
+  "uploadedAt": {
+   "$date": "2026-09-26T11:00:00Z"
+  }
+ },
+ {
+  "_id": {
+   "$oid": "d10000000000000000000007"
+  },
+  "noticeId": {
+   "$oid": "b20000000000000000000007"
+  },
+  "fileName": "flyer-07.png",
+  "contentType": "image/png",
+  "size": 102426,
+  "description": "Flyer for Embedded Systems Intern at ElectroTech (dummy data)",
+  "uploadedBy": {
+   "$oid": "a10000000000000000000002"
+  },
+  "uploadedAt": {
+   "$date": "2026-09-25T11:00:00Z"
+  }
+ },
+ {
+  "_id": {
+   "$oid": "d10000000000000000000008"
+  },
+  "noticeId": {
+   "$oid": "b20000000000000000000008"
+  },
+  "fileName": "flyer-08.png",
+  "contentType": "image/png",
+  "size": 99463,
+  "description": "Flyer for IoT Engineering Intern at SmartWave (dummy data)",
+  "uploadedBy": {
+   "$oid": "a10000000000000000000003"
+  },
+  "uploadedAt": {
+   "$date": "2026-09-24T11:00:00Z"
+  }
+ },
+ {
+  "_id": {
+   "$oid": "d10000000000000000000009"
+  },
+  "noticeId": {
+   "$oid": "b20000000000000000000009"
+  },
+  "fileName": "flyer-09.png",
+  "contentType": "image/png",
+  "size": 106022,
+  "description": "Flyer for Network Engineering Intern at NetSolutions (dummy data)",
+  "uploadedBy": {
+   "$oid": "a10000000000000000000002"
+  },
+  "uploadedAt": {
+   "$date": "2026-09-23T11:00:00Z"
+  }
+ },
+ {
+  "_id": {
+   "$oid": "d1000000000000000000000a"
+  },
+  "noticeId": {
+   "$oid": "b2000000000000000000000a"
+  },
+  "fileName": "flyer-10.png",
+  "contentType": "image/png",
+  "size": 100812,
+  "description": "Flyer for Cybersecurity Intern at SecureNet (dummy data)",
+  "uploadedBy": {
+   "$oid": "a10000000000000000000003"
+  },
+  "uploadedAt": {
+   "$date": "2026-09-22T11:00:00Z"
+  }
+ },
+ {
+  "_id": {
+   "$oid": "d1000000000000000000000b"
+  },
+  "noticeId": {
+   "$oid": "b2000000000000000000000b"
+  },
+  "fileName": "flyer-11.png",
+  "contentType": "image/png",
+  "size": 95452,
+  "description": "Flyer for UI/UX Design Intern at PixelStudio (dummy data)",
+  "uploadedBy": {
+   "$oid": "a10000000000000000000001"
+  },
+  "uploadedAt": {
+   "$date": "2026-09-21T11:00:00Z"
+  }
+ },
+ {
+  "_id": {
+   "$oid": "d1000000000000000000000c"
+  },
+  "noticeId": {
+   "$oid": "b2000000000000000000000c"
+  },
+  "fileName": "flyer-12.png",
+  "contentType": "image/png",
+  "size": 96942,
+  "description": "Flyer for Business Analyst Intern at BizTech (dummy data)",
+  "uploadedBy": {
+   "$oid": "a10000000000000000000003"
+  },
+  "uploadedAt": {
+   "$date": "2026-09-20T11:00:00Z"
+  }
+ },
+ {
+  "_id": {
+   "$oid": "d1000000000000000000000e"
+  },
+  "noticeId": {
+   "$oid": "b2000000000000000000000e"
+  },
+  "fileName": "flyer-14.png",
+  "contentType": "image/png",
+  "size": 92148,
+  "description": "Flyer for Finance Intern at FinEdge (dummy data)",
+  "uploadedBy": {
+   "$oid": "a10000000000000000000003"
+  },
+  "uploadedAt": {
+   "$date": "2026-09-18T11:00:00Z"
+  }
+ }
+]
