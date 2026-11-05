@@ -1,4 +1,3 @@
 package com.pathfinder.user.user;
 
-public enum Role {
-}
+public enum Role { STUDENT , STAFF, ADMIN}

@@ -1,0 +1,11 @@
+   server:
+     port: 8083
+   spring:
+     application:
+       name: flyer-service
+     mongodb:
+       uri: mongodb://localhost:27017/flyer_db
+     data:
+       mongodb:
+         uri: mongodb://localhost:27017/flyer_db
+         auto-index-creation: true

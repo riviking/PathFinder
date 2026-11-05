@@ -1,0 +1,11 @@
+   server:
+     port: 8081
+   spring:
+     application:
+       name: user-service
+     mongodb:
+       uri: mongodb://localhost:27017/user_db
+     data:
+       mongodb:
+         uri: mongodb://localhost:27017/user_db
+         auto-index-creation: true
