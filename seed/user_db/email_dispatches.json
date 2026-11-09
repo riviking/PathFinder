@@ -3,88 +3,118 @@
   "_id": {
    "$oid": "a30000000000000000000001"
   },
-  "noticeId": {
-   "$oid": "b20000000000000000000001"
-  },
+  "noticeId": "1abbdc42-d353-5816-a5bc-a2343ef94ea6",
   "sentCount": 4,
   "failedCount": 0,
   "createdAt": {
-   "$date": "2026-10-21T09:01:00Z"
+   "$date": "2026-10-29T09:01:00Z"
   }
  },
  {
   "_id": {
    "$oid": "a30000000000000000000002"
   },
-  "noticeId": {
-   "$oid": "b20000000000000000000002"
-  },
+  "noticeId": "ee41d56d-cdf7-54c9-bcfd-2deb1e6ed0d8",
   "sentCount": 4,
   "failedCount": 0,
   "createdAt": {
-   "$date": "2026-10-20T09:01:00Z"
+   "$date": "2026-10-28T09:01:00Z"
   }
  },
  {
   "_id": {
    "$oid": "a30000000000000000000003"
   },
-  "noticeId": {
-   "$oid": "b20000000000000000000003"
-  },
+  "noticeId": "683d016b-f5aa-5942-b52e-fde42dd0ee7a",
   "sentCount": 3,
   "failedCount": 1,
   "createdAt": {
-   "$date": "2026-10-19T09:01:00Z"
+   "$date": "2026-10-27T09:01:00Z"
   }
  },
  {
   "_id": {
    "$oid": "a30000000000000000000004"
   },
-  "noticeId": {
-   "$oid": "b20000000000000000000004"
-  },
+  "noticeId": "cc5d27ba-e42b-5e96-9e61-7d21ccd91f5b",
   "sentCount": 4,
   "failedCount": 0,
   "createdAt": {
-   "$date": "2026-10-18T09:01:00Z"
+   "$date": "2026-10-26T09:01:00Z"
   }
  },
  {
   "_id": {
    "$oid": "a30000000000000000000005"
   },
-  "noticeId": {
-   "$oid": "b20000000000000000000005"
-  },
+  "noticeId": "84be0efa-4d16-5a95-8c99-5c4c827ef414",
   "sentCount": 3,
   "failedCount": 0,
   "createdAt": {
-   "$date": "2026-10-22T09:01:00Z"
+   "$date": "2026-10-30T09:01:00Z"
   }
  },
  {
   "_id": {
    "$oid": "a30000000000000000000006"
   },
-  "noticeId": {
-   "$oid": "b20000000000000000000006"
-  },
+  "noticeId": "2dfe31b3-e9f8-507c-8d69-6a0f4091c387",
   "sentCount": 3,
   "failedCount": 0,
   "createdAt": {
-   "$date": "2026-10-21T09:01:00Z"
+   "$date": "2026-10-29T09:01:00Z"
   }
  },
  {
   "_id": {
    "$oid": "a30000000000000000000007"
   },
-  "noticeId": {
-   "$oid": "b20000000000000000000007"
-  },
+  "noticeId": "b7ff46e4-9932-5270-a10d-2e1990b1229f",
   "sentCount": 3,
+  "failedCount": 0,
+  "createdAt": {
+   "$date": "2026-10-28T09:01:00Z"
+  }
+ },
+ {
+  "_id": {
+   "$oid": "a30000000000000000000008"
+  },
+  "noticeId": "6515715c-41e2-5cb7-8b0c-cc21bd24b4a8",
+  "sentCount": 3,
+  "failedCount": 0,
+  "createdAt": {
+   "$date": "2026-10-27T09:01:00Z"
+  }
+ },
+ {
+  "_id": {
+   "$oid": "a30000000000000000000009"
+  },
+  "noticeId": "1b179da6-f0bc-5e2c-b603-fb1e7d8e6018",
+  "sentCount": 3,
+  "failedCount": 0,
+  "createdAt": {
+   "$date": "2026-10-26T09:01:00Z"
+  }
+ },
+ {
+  "_id": {
+   "$oid": "a3000000000000000000000a"
+  },
+  "noticeId": "1524df7b-d6a5-501c-a903-f2333b765d40",
+  "sentCount": 3,
+  "failedCount": 0,
+  "createdAt": {
+   "$date": "2026-10-30T09:01:00Z"
+  }
+ },
+ {
+  "_id": {
+   "$oid": "a3000000000000000000000b"
+  },
+  "noticeId": "7cda7991-3887-5b84-9a8f-175919bf96cd",
+  "sentCount": 2,
   "failedCount": 0,
   "createdAt": {
    "$date": "2026-10-20T09:01:00Z"
@@ -92,80 +122,24 @@
  },
  {
   "_id": {
-   "$oid": "a30000000000000000000008"
-  },
-  "noticeId": {
-   "$oid": "b20000000000000000000008"
-  },
-  "sentCount": 3,
-  "failedCount": 0,
-  "createdAt": {
-   "$date": "2026-10-19T09:01:00Z"
-  }
- },
- {
-  "_id": {
-   "$oid": "a30000000000000000000009"
-  },
-  "noticeId": {
-   "$oid": "b20000000000000000000009"
-  },
-  "sentCount": 3,
-  "failedCount": 0,
-  "createdAt": {
-   "$date": "2026-10-18T09:01:00Z"
-  }
- },
- {
-  "_id": {
-   "$oid": "a3000000000000000000000a"
-  },
-  "noticeId": {
-   "$oid": "b2000000000000000000000a"
-  },
-  "sentCount": 3,
-  "failedCount": 0,
-  "createdAt": {
-   "$date": "2026-10-22T09:01:00Z"
-  }
- },
- {
-  "_id": {
-   "$oid": "a3000000000000000000000b"
-  },
-  "noticeId": {
-   "$oid": "b2000000000000000000000b"
-  },
-  "sentCount": 2,
-  "failedCount": 0,
-  "createdAt": {
-   "$date": "2026-10-12T09:01:00Z"
-  }
- },
- {
-  "_id": {
    "$oid": "a3000000000000000000000e"
   },
-  "noticeId": {
-   "$oid": "b2000000000000000000000e"
-  },
+  "noticeId": "58c4fb63-92c5-5e14-bdd6-ec172f1b3945",
   "sentCount": 2,
   "failedCount": 0,
   "createdAt": {
-   "$date": "2026-10-18T09:01:00Z"
+   "$date": "2026-10-26T09:01:00Z"
   }
  },
  {
   "_id": {
    "$oid": "a3000000000000000000000f"
   },
-  "noticeId": {
-   "$oid": "b2000000000000000000000f"
-  },
+  "noticeId": "6e85685f-7d6c-58aa-bf7d-588478643a3a",
   "sentCount": 2,
   "failedCount": 0,
   "createdAt": {
-   "$date": "2026-10-22T09:01:00Z"
+   "$date": "2026-10-30T09:01:00Z"
   }
  }
 ]

@@ -8,6 +8,8 @@ import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
 
 @Document("users")
 @Getter
@@ -23,4 +25,5 @@ public class User {
     private boolean active = true;
     private Instant createdAt;
     private Instant lastLoginAt;
+    private List<String> selectedCategoryIds = new ArrayList<>();
 }

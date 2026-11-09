@@ -1,5 +1,5 @@
 services:
-  mongo:
+  mongo:                                   # user-service database (user_db)
     image: mongo:7
     container_name: pathfinder-mongo
     ports:
@@ -7,7 +7,19 @@ services:
     volumes:
       - mongodata:/data/db
       - ./seed:/seed:ro
-  mailhog:
+  postgres:                                # notice-service database (notice_db). On the hosted system this is Supabase.
+    image: postgres:16
+    container_name: pathfinder-postgres
+    environment:
+      POSTGRES_USER: pathfinder
+      POSTGRES_PASSWORD: pathfinder        # development only
+      POSTGRES_DB: notice_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./seed:/seed:ro
+  mailhog:                                 # a fake mail server: every email can be read at http://localhost:8025
     image: mailhog/mailhog
     container_name: pathfinder-mailhog
     ports:
@@ -15,3 +27,4 @@ services:
       - "8025:8025"
 volumes:
   mongodata:
+  pgdata:

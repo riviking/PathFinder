@@ -6,20 +6,18 @@
   "studentId": {
    "$oid": "a1000000000000000000000b"
   },
-  "noticeId": {
-   "$oid": "b20000000000000000000001"
-  },
+  "noticeId": "1abbdc42-d353-5816-a5bc-a2343ef94ea6",
   "reminderAt": {
-   "$date": "2026-11-11T03:30:00Z"
+   "$date": "2026-11-19T03:30:00Z"
   },
   "reminderSentAt": null,
   "title": "Software Engineer Intern",
   "company": "TechNova",
   "deadline": {
-   "$date": "2026-11-15T18:29:59Z"
+   "$date": "2026-11-23T18:29:59Z"
   },
   "createdAt": {
-   "$date": "2026-10-27T09:00:00Z"
+   "$date": "2026-11-04T09:00:00Z"
   }
  },
  {
@@ -29,20 +27,18 @@
   "studentId": {
    "$oid": "a1000000000000000000000b"
   },
-  "noticeId": {
-   "$oid": "b20000000000000000000006"
-  },
+  "noticeId": "2dfe31b3-e9f8-507c-8d69-6a0f4091c387",
   "reminderAt": {
-   "$date": "2026-11-08T03:30:00Z"
+   "$date": "2026-11-16T03:30:00Z"
   },
   "reminderSentAt": null,
   "title": "Data Analyst Intern",
   "company": "DataVision",
   "deadline": {
-   "$date": "2026-11-10T18:29:59Z"
+   "$date": "2026-11-18T18:29:59Z"
   },
   "createdAt": {
-   "$date": "2026-10-27T09:00:00Z"
+   "$date": "2026-11-04T09:00:00Z"
   }
  },
  {
@@ -52,20 +48,18 @@
   "studentId": {
    "$oid": "a1000000000000000000000c"
   },
-  "noticeId": {
-   "$oid": "b20000000000000000000002"
-  },
+  "noticeId": "ee41d56d-cdf7-54c9-bcfd-2deb1e6ed0d8",
   "reminderAt": {
-   "$date": "2026-11-16T03:30:00Z"
+   "$date": "2026-11-24T03:30:00Z"
   },
   "reminderSentAt": null,
   "title": "Frontend Developer Intern",
   "company": "WebCore",
   "deadline": {
-   "$date": "2026-11-21T18:29:59Z"
+   "$date": "2026-11-29T18:29:59Z"
   },
   "createdAt": {
-   "$date": "2026-10-27T09:00:00Z"
+   "$date": "2026-11-04T09:00:00Z"
   }
  },
  {
@@ -75,18 +69,16 @@
   "studentId": {
    "$oid": "a1000000000000000000000d"
   },
-  "noticeId": {
-   "$oid": "b20000000000000000000001"
-  },
+  "noticeId": "1abbdc42-d353-5816-a5bc-a2343ef94ea6",
   "reminderAt": null,
   "reminderSentAt": null,
   "title": "Software Engineer Intern",
   "company": "TechNova",
   "deadline": {
-   "$date": "2026-11-15T18:29:59Z"
+   "$date": "2026-11-23T18:29:59Z"
   },
   "createdAt": {
-   "$date": "2026-10-27T09:00:00Z"
+   "$date": "2026-11-04T09:00:00Z"
   }
  },
  {
@@ -96,20 +88,18 @@
   "studentId": {
    "$oid": "a1000000000000000000000d"
   },
-  "noticeId": {
-   "$oid": "b20000000000000000000009"
-  },
+  "noticeId": "1b179da6-f0bc-5e2c-b603-fb1e7d8e6018",
   "reminderAt": {
-   "$date": "2026-12-21T03:30:00Z"
+   "$date": "2026-12-29T03:30:00Z"
   },
   "reminderSentAt": null,
   "title": "Network Engineering Intern",
   "company": "NetSolutions",
   "deadline": {
-   "$date": "2026-12-31T18:29:59Z"
+   "$date": "2027-01-08T18:29:59Z"
   },
   "createdAt": {
-   "$date": "2026-10-27T09:00:00Z"
+   "$date": "2026-11-04T09:00:00Z"
   }
  },
  {
@@ -119,20 +109,18 @@
   "studentId": {
    "$oid": "a1000000000000000000000e"
   },
-  "noticeId": {
-   "$oid": "b20000000000000000000005"
-  },
+  "noticeId": "84be0efa-4d16-5a95-8c99-5c4c827ef414",
   "reminderAt": {
-   "$date": "2026-12-01T03:30:00Z"
+   "$date": "2026-12-09T03:30:00Z"
   },
   "reminderSentAt": null,
   "title": "AI/ML Intern",
   "company": "NeuralTech",
   "deadline": {
-   "$date": "2026-12-06T18:29:59Z"
+   "$date": "2026-12-14T18:29:59Z"
   },
   "createdAt": {
-   "$date": "2026-10-27T09:00:00Z"
+   "$date": "2026-11-04T09:00:00Z"
   }
  },
  {
@@ -142,22 +130,20 @@
   "studentId": {
    "$oid": "a1000000000000000000000e"
   },
-  "noticeId": {
-   "$oid": "b20000000000000000000006"
-  },
+  "noticeId": "2dfe31b3-e9f8-507c-8d69-6a0f4091c387",
   "reminderAt": {
-   "$date": "2026-10-31T03:30:00Z"
+   "$date": "2026-11-08T03:30:00Z"
   },
   "reminderSentAt": {
-   "$date": "2026-10-31T03:31:00Z"
+   "$date": "2026-11-08T03:31:00Z"
   },
   "title": "Data Analyst Intern",
   "company": "DataVision",
   "deadline": {
-   "$date": "2026-11-10T18:29:59Z"
+   "$date": "2026-11-18T18:29:59Z"
   },
   "createdAt": {
-   "$date": "2026-10-27T09:00:00Z"
+   "$date": "2026-11-04T09:00:00Z"
   }
  },
  {
@@ -167,20 +153,18 @@
   "studentId": {
    "$oid": "a1000000000000000000000f"
   },
-  "noticeId": {
-   "$oid": "b20000000000000000000007"
-  },
+  "noticeId": "b7ff46e4-9932-5270-a10d-2e1990b1229f",
   "reminderAt": {
-   "$date": "2026-12-06T03:30:00Z"
+   "$date": "2026-12-14T03:30:00Z"
   },
   "reminderSentAt": null,
   "title": "Embedded Systems Intern",
   "company": "ElectroTech",
   "deadline": {
-   "$date": "2026-12-13T18:29:59Z"
+   "$date": "2026-12-21T18:29:59Z"
   },
   "createdAt": {
-   "$date": "2026-10-27T09:00:00Z"
+   "$date": "2026-11-04T09:00:00Z"
   }
  },
  {
@@ -190,20 +174,18 @@
   "studentId": {
    "$oid": "a1000000000000000000000f"
   },
-  "noticeId": {
-   "$oid": "b20000000000000000000008"
-  },
+  "noticeId": "6515715c-41e2-5cb7-8b0c-cc21bd24b4a8",
   "reminderAt": {
-   "$date": "2026-11-01T00:01:00Z"
+   "$date": "2026-11-09T00:01:00Z"
   },
   "reminderSentAt": null,
   "title": "IoT Engineering Intern",
   "company": "SmartWave",
   "deadline": {
-   "$date": "2026-12-21T18:29:59Z"
+   "$date": "2026-12-29T18:29:59Z"
   },
   "createdAt": {
-   "$date": "2026-10-27T09:00:00Z"
+   "$date": "2026-11-04T09:00:00Z"
   }
  },
  {
@@ -213,20 +195,18 @@
   "studentId": {
    "$oid": "a10000000000000000000014"
   },
-  "noticeId": {
-   "$oid": "b20000000000000000000003"
-  },
+  "noticeId": "683d016b-f5aa-5942-b52e-fde42dd0ee7a",
   "reminderAt": {
-   "$date": "2026-11-02T03:30:00Z"
+   "$date": "2026-11-10T03:30:00Z"
   },
   "reminderSentAt": null,
   "title": "Backend Developer Intern",
   "company": "CodeLabs",
   "deadline": {
-   "$date": "2026-11-04T18:29:59Z"
+   "$date": "2026-11-12T18:29:59Z"
   },
   "createdAt": {
-   "$date": "2026-10-27T09:00:00Z"
+   "$date": "2026-11-04T09:00:00Z"
   }
  },
  {
@@ -236,20 +216,18 @@
   "studentId": {
    "$oid": "a10000000000000000000014"
   },
-  "noticeId": {
-   "$oid": "b2000000000000000000000e"
-  },
+  "noticeId": "58c4fb63-92c5-5e14-bdd6-ec172f1b3945",
   "reminderAt": {
-   "$date": "2026-12-31T03:30:00Z"
+   "$date": "2027-01-08T03:30:00Z"
   },
   "reminderSentAt": null,
   "title": "Finance Intern",
   "company": "FinEdge",
   "deadline": {
-   "$date": "2027-01-15T18:29:59Z"
+   "$date": "2027-01-23T18:29:59Z"
   },
   "createdAt": {
-   "$date": "2026-10-27T09:00:00Z"
+   "$date": "2026-11-04T09:00:00Z"
   }
  }
 ]

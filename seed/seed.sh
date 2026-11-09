@@ -1,14 +1,10 @@
 #!/usr/bin/env bash
 # Mac / Linux. Run from the folder that contains docker-compose.yml:   bash seed/seed.sh
 set -e
-for pair in user_db/users user_db/student_profiles user_db/email_dispatches user_db/saved_posts notice_db/job_categories notice_db/notices notice_db/notice_views flyer_db/flyers; do
-  db="${pair%/*}"; col="${pair#*/}"
-  docker exec pathfinder-mongo mongoimport --db "$db" --collection "$col" --drop --jsonArray --file "/seed/$db/$col.json"
-done
-docker exec pathfinder-mongo mongosh flyer_db --quiet --eval "db.fs.files.drop(); db.fs.chunks.drop()"
-for f in seed/flyers/*.png; do
-  name="$(basename "$f")"
-  docker exec pathfinder-mongo mongofiles --db flyer_db --local "/seed/flyers/$name" --type image/png put "$name"
+for c in users student_profiles email_dispatches saved_posts; do
+  docker exec pathfinder-mongo mongoimport --db user_db --collection "$c" --drop --jsonArray --file "/seed/user_db/$c.json"
 done
 docker exec pathfinder-mongo mongosh --quiet /seed/indexes.js
+docker exec pathfinder-postgres psql -U pathfinder -d notice_db -v ON_ERROR_STOP=1 -f /seed/postgres/schema.sql
+docker exec pathfinder-postgres psql -U pathfinder -d notice_db -v ON_ERROR_STOP=1 -f /seed/postgres/seed.sql
 echo "Dummy data loaded."

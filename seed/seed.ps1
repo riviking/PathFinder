@@ -1,18 +1,14 @@
 # Windows PowerShell. Run from the folder that contains docker-compose.yml:   .\seed\seed.ps1
-# Needs:  docker compose up -d   (the container name is pathfinder-mongo)
+# Needs:  docker compose up -d   (containers pathfinder-mongo and pathfinder-postgres)
 $ErrorActionPreference = 'Stop'
-$cols = @(
-  @('user_db','users'), @('user_db','student_profiles'), @('user_db','email_dispatches'), @('user_db','saved_posts'),
-  @('notice_db','job_categories'), @('notice_db','notices'), @('notice_db','notice_views'),
-  @('flyer_db','flyers')
-)
-foreach ($c in $cols) {
-  docker exec pathfinder-mongo mongoimport --db $c[0] --collection $c[1] --drop --jsonArray --file "/seed/$($c[0])/$($c[1]).json"
-}
-# flyer images go into GridFS (database flyer_db, bucket fs)
-docker exec pathfinder-mongo mongosh flyer_db --quiet --eval "db.fs.files.drop(); db.fs.chunks.drop()"
-Get-ChildItem .\seed\flyers\*.png | ForEach-Object {
-  docker exec pathfinder-mongo mongofiles --db flyer_db --local "/seed/flyers/$($_.Name)" --type image/png put $_.Name
+
+# MongoDB: user-service data (user_db)
+foreach ($c in @('users', 'student_profiles', 'email_dispatches', 'saved_posts')) {
+  docker exec pathfinder-mongo mongoimport --db user_db --collection $c --drop --jsonArray --file "/seed/user_db/$c.json"
 }
 docker exec pathfinder-mongo mongosh --quiet /seed/indexes.js
+
+# PostgreSQL: notice-service data (notice_db): tables, then test data (including the flyer images)
+docker exec pathfinder-postgres psql -U pathfinder -d notice_db -v ON_ERROR_STOP=1 -f /seed/postgres/schema.sql
+docker exec pathfinder-postgres psql -U pathfinder -d notice_db -v ON_ERROR_STOP=1 -f /seed/postgres/seed.sql
 Write-Host 'Dummy data loaded.'
