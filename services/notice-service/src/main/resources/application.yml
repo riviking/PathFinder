@@ -1,11 +1,19 @@
-   server:
-     port: 8082
-   spring:
-     application:
-       name: notice-service
-     mongodb:
-       uri: mongodb://localhost:27017/notice_db
-     data:
-       mongodb:
-         uri: mongodb://localhost:27017/notice_db
-         auto-index-creation: true
+server:
+  port: 8082
+  error:
+    include-message: always
+spring:
+  application:
+    name: notice-service
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/notice_db}
+    username: ${DB_USER:pathfinder}
+    password: ${DB_PASSWORD:pathfinder}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  servlet:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 3MB

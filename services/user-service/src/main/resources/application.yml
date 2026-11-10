@@ -1,11 +1,17 @@
-   server:
-     port: 8081
-   spring:
-     application:
-       name: user-service
-     mongodb:
-       uri: mongodb://localhost:27017/user_db
-     data:
-       mongodb:
-         uri: mongodb://localhost:27017/user_db
-         auto-index-creation: true
+server:
+  port: 8081
+  error:
+    include-message: always
+spring:
+  application:
+    name: user-service
+  mongodb:
+    uri: mongodb://localhost:27017/user_db
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/user_db
+      auto-index-creation: true
+app:
+  jwt:
+    secret: dev-only-secret-please-change-dev-only-secret
+    expiry-minutes: 60
