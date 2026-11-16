@@ -3,6 +3,9 @@ server:
   error:
     include-message: always
 spring:
+  mail:
+    host: localhost
+    port: 1025
   application:
     name: user-service
   mongodb:
