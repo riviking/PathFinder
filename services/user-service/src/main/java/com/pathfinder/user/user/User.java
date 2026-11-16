@@ -25,4 +25,5 @@ public class User {
     private boolean active = true;
     private Instant createdAt;
     private Instant lastLoginAt;
+
 }
