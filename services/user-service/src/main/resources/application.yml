@@ -3,6 +3,9 @@ server:
   error:
     include-message: always
 spring:
+  mail:
+    host: localhost
+    port: 1025
   application:
     name: user-service
   mongodb:
@@ -12,6 +15,7 @@ spring:
       uri: mongodb://localhost:27017/user_db
       auto-index-creation: true
 app:
+  internal-key: dev-internal-key-change-me
   jwt:
     secret: dev-only-secret-please-change-dev-only-secret
     expiry-minutes: 60

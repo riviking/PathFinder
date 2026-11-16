@@ -26,6 +26,8 @@ public class SecurityConfig {
                     .requestMatchers("/api/auth/**", "/actuator/health", "/actuator/health/**", "/error").permitAll()
                 .requestMatchers("/api/admin/**").hasRole("ADMIN")
                     .requestMatchers("/api/profile/**").hasRole("STUDENT")
+                    .requestMatchers("/api/saved/**").hasRole("STUDENT")
+                    .requestMatchers("/internal/**").permitAll()
                 .anyRequest().authenticated())
             .exceptionHandling(e -> e
                 .authenticationEntryPoint((req, res, ex) -> json(res, 401, "Please log in."))
