@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { api } from '../api'
+import Layout from '../Layout'
 
 export default function StaffAccounts() {
     const [staff, setStaff] = useState([])
@@ -31,7 +31,7 @@ export default function StaffAccounts() {
         setError('')
         setMessage('')
         if (password.length < 8) {
-            setError('Password must be at least 8 characters.')
+            setError('Use at least 8 characters.')
             return
         }
         setBusy(true)
@@ -62,46 +62,61 @@ export default function StaffAccounts() {
         }
     }
 
-    if (loading) return <p>Loading...</p>
-
     return (
-        <div style={{ display: 'grid', gap: 16, width: 560 }}>
-            <h1>Staff accounts</h1>
-            {error && <p style={{ color: 'tomato' }}>{error}</p>}
-            {message && <p style={{ color: 'seagreen' }}>{message}</p>}
+        <Layout title="Staff Accounts" subtitle="Only an Admin can create, deactivate and reactivate staff accounts.">
+            {error && <p className="msg error">{error}</p>}
+            {message && <p className="msg ok">{message}</p>}
 
-            <table style={{ borderCollapse: 'collapse', width: '100%' }}>
-                <thead>
-                <tr style={{ textAlign: 'left' }}>
-                    <th>Name</th><th>Email</th><th>Status</th><th></th>
-                </tr>
-                </thead>
-                <tbody>
-                {staff.map((s) => (
-                    <tr key={s.id}>
-                        <td>{s.name}</td>
-                        <td>{s.email}</td>
-                        <td>{s.active ? 'Active' : 'Inactive'}</td>
-                        <td>
-                            {s.active
-                                ? <button onClick={() => setActive(s, false)}>Deactivate</button>
-                                : <button onClick={() => setActive(s, true)}>Reactivate</button>}
-                        </td>
-                    </tr>
-                ))}
-                </tbody>
-            </table>
+            <section className="card">
+                {loading ? <p>Loading...</p> : (
+                    <div className="table-wrap">
+                        <table className="table">
+                            <thead>
+                            <tr><th>Name</th><th>Email</th><th>Status</th><th>Actions</th></tr>
+                            </thead>
+                            <tbody>
+                            {staff.length === 0 && (
+                                <tr><td colSpan="4" className="hint">No staff accounts yet.</td></tr>
+                            )}
+                            {staff.map((s) => (
+                                <tr key={s.id}>
+                                    <td>{s.name}</td>
+                                    <td>{s.email}</td>
+                                    <td><span className={`badge ${s.active ? 'ok' : 'off'}`}>{s.active ? 'Active' : 'Deactivated'}</span></td>
+                                    <td>
+                                        {s.active
+                                            ? <button className="btn danger small" onClick={() => setActive(s, false)}>Deactivate</button>
+                                            : <button className="btn secondary small" onClick={() => setActive(s, true)}>Reactivate</button>}
+                                    </td>
+                                </tr>
+                            ))}
+                            </tbody>
+                        </table>
+                    </div>
+                )}
+            </section>
 
-            <form onSubmit={create} style={{ display: 'grid', gap: 8 }}>
-                <h2>Add a staff member</h2>
-                <input placeholder="Full name" value={name} onChange={(e) => setName(e.target.value)} required />
-                <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-                <input type="password" placeholder="Temporary password (min 8 characters)" value={password}
-                       onChange={(e) => setPassword(e.target.value)} required />
-                <button type="submit" disabled={busy}>{busy ? 'Creating...' : 'Create staff account'}</button>
+            <form className="card" onSubmit={create}>
+                <h2>Create staff account</h2>
+                <div className="form-grid">
+                    <div className="field">
+                        <label htmlFor="sname">Name</label>
+                        <input id="sname" type="text" value={name} onChange={(e) => setName(e.target.value)} required />
+                    </div>
+                    <div className="field">
+                        <label htmlFor="semail">Email</label>
+                        <input id="semail" type="email" value={email} autoComplete="off" onChange={(e) => setEmail(e.target.value)} required />
+                    </div>
+                    <div className="field">
+                        <label htmlFor="spass">Temporary password</label>
+                        <input id="spass" type="password" value={password} autoComplete="new-password" onChange={(e) => setPassword(e.target.value)} required />
+                    </div>
+                    <div className="btn-row">
+                        <button className="btn" type="submit" disabled={busy}>{busy ? 'Creating...' : 'Create staff account'}</button>
+                    </div>
+                </div>
+                <p className="hint">Staff cannot register themselves.</p>
             </form>
-
-            <p><Link to="/">Back</Link></p>
-        </div>
+        </Layout>
     )
 }

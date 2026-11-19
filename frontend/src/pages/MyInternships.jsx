@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { api } from '../api'
 
-// ISO (UTC) -> <input type="datetime-local"> අගය (පරිගණකයේ වේලාවෙන්)
 function toLocalInput(iso) {
     if (!iso) return ''
     const d = new Date(iso)
@@ -10,8 +8,8 @@ function toLocalInput(iso) {
     return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`
 }
 
-function show(iso) {
-    return iso ? new Date(iso).toLocaleString() : '-'
+function day(iso) {
+    return iso ? new Date(iso).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : '-'
 }
 
 export default function MyInternships() {
@@ -19,11 +17,13 @@ export default function MyInternships() {
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState('')
     const [message, setMessage] = useState('')
-    const [edits, setEdits] = useState({}) // noticeId -> datetime-local පෙළ
+    const [edits, setEdits] = useState({})
 
     async function load() {
         try {
-            const list = await api('/api/profile/saved')
+            const list = (await api('/api/profile/saved')).sort(
+                (a, b) => new Date(a.deadline) - new Date(b.deadline),
+            )
             setItems(list)
             setEdits(Object.fromEntries(list.map((i) => [i.noticeId, toLocalInput(i.reminderAt)])))
         } catch (err) {
@@ -51,7 +51,7 @@ export default function MyInternships() {
                     reminderAt: value ? new Date(value).toISOString() : null,
                 },
             })
-            setMessage(value ? 'Reminder saved.' : 'Reminder removed.')
+            setMessage(value ? 'Reminder saved.' : 'Reminder cleared.')
             await load()
         } catch (err) {
             setError(err.message)
@@ -64,41 +64,51 @@ export default function MyInternships() {
         setMessage('')
         try {
             await api(`/api/saved/${item.noticeId}`, { method: 'DELETE' })
-            setMessage('Removed.')
+            setMessage('Removed from My Internships.')
             await load()
         } catch (err) {
             setError(err.message)
         }
     }
 
-    if (loading) return <p>Loading...</p>
-
     return (
-        <div style={{ display: 'grid', gap: 16, width: 520 }}>
-            <h1>My Internships</h1>
-            {error && <p style={{ color: 'tomato' }}>{error}</p>}
-            {message && <p style={{ color: 'seagreen' }}>{message}</p>}
-            {items.length === 0 && <p>You have not saved any internships yet.</p>}
-            {items.map((i) => (
-                <div key={i.noticeId} style={{ border: '1px solid #8884', borderRadius: 8, padding: 12, display: 'grid', gap: 8 }}>
-                    <strong>{i.title}</strong>
-                    <span>{i.company || '-'} · Deadline: {show(i.deadline)}</span>
-                    <label style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
-                        Reminder:
-                        <input
-                            type="datetime-local"
-                            value={edits[i.noticeId] ?? ''}
-                            onChange={(e) => setEdits((cur) => ({ ...cur, [i.noticeId]: e.target.value }))}
-                        />
-                        {i.reminderSent && <em>Reminder sent</em>}
-                    </label>
-                    <div style={{ display: 'flex', gap: 8 }}>
-                        <button onClick={() => saveReminder(i)}>Save reminder</button>
-                        <button onClick={() => remove(i)}>Remove</button>
-                    </div>
+        <section className="card">
+            <h2>My Internships</h2>
+            <p className="hint">Internships you added from the notice page. Nearest deadline first. Only you can see this list.</p>
+            {error && <p className="msg error">{error}</p>}
+            {message && <p className="msg ok">{message}</p>}
+            {loading && <p>Loading...</p>}
+            {!loading && items.length === 0 && (
+                <p className="hint">You have not added any internships yet. Open a notice and choose Add to My Internships.</p>
+            )}
+            {items.length > 0 && (
+                <div className="table-wrap">
+                    <table className="table">
+                        <thead>
+                        <tr><th>Internship</th><th>Apply by</th><th>Reminder</th><th>Actions</th></tr>
+                        </thead>
+                        <tbody>
+                        {items.map((i) => (
+                            <tr key={i.noticeId}>
+                                <td>{i.title}<span className="sub">{i.company || '-'}</span></td>
+                                <td>{day(i.deadline)}</td>
+                                <td>
+                                    <input type="datetime-local" value={edits[i.noticeId] ?? ''}
+                                           onChange={(e) => setEdits((cur) => ({ ...cur, [i.noticeId]: e.target.value }))} />
+                                    {i.reminderSent && <span className="sub">Reminder sent</span>}
+                                </td>
+                                <td>
+                                    <div className="btn-row">
+                                        <button className="btn small" onClick={() => saveReminder(i)}>Save reminder</button>
+                                        <button className="btn danger small" onClick={() => remove(i)}>Remove</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        ))}
+                        </tbody>
+                    </table>
                 </div>
-            ))}
-            <p><Link to="/">Back</Link></p>
-        </div>
+            )}
+        </section>
     )
 }
