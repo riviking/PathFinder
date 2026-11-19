@@ -25,6 +25,21 @@ services:
     ports:
       - "1025:1025"
       - "8025:8025"
+  user-service:                            # PathFinder user-service (port 8081)
+    build: ./services/user-service
+    container_name: pathfinder-user-service
+    depends_on:
+      - mongo
+      - mailhog
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_MONGODB_URI: mongodb://mongo:27017/user_db
+      SPRING_DATA_MONGODB_URI: mongodb://mongo:27017/user_db
+      SPRING_MAIL_HOST: mailhog
+      SPRING_MAIL_PORT: "1025"
+      APP_JWT_SECRET: dev-only-secret-please-change-dev-only-secret
+      APP_INTERNAL_KEY: dev-internal-key-change-me
 volumes:
   mongodata:
   pgdata:
