@@ -1,27 +1,21 @@
-import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../AuthContext'
+import Layout from '../Layout'
 
 export default function Home() {
-    const { user, logout } = useAuth()
-    const navigate = useNavigate()
+    const { user } = useAuth()
+    const isStudent = user.role === 'STUDENT'
 
     return (
-        <div>
-            <h1>Hello, {user.name}</h1>
-            <p>{user.email} ({user.role})</p>
-            {user.role === 'STUDENT' && (
-                <p>
-                    <Link to="/profile">My interests</Link>{' · '}
-                    <Link to="/saved">My Internships</Link>
-                </p>
-            )}
-            {user.role === 'ADMIN' && (
-                <p><Link to="/admin/staff">Staff accounts</Link></p>
-            )}
-            {user.role !== 'STUDENT' && (
-                <p><em>Notice pages will appear here when the notice screens are ready.</em></p>
-            )}
-            <button onClick={() => { logout(); navigate('/login') }}>Log out</button>
-        </div>
+        <Layout
+            title={isStudent ? 'Internship Opportunities' : 'Notice Management'}
+            subtitle={isStudent
+                ? 'Browse published internships with upcoming application deadlines.'
+                : 'Manage draft, published and closed internship notices.'}
+        >
+            <div className="card">
+                <p>Signed in as <strong>{user.email}</strong></p>
+                <p className="hint">The notice screens will appear here when they are ready.</p>
+            </div>
+        </Layout>
     )
 }

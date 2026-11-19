@@ -4,7 +4,7 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import Home from './pages/Home'
 import Profile from './pages/Profile'
-import MyInternships from './pages/MyInternships'
+import ProfileSettings from './pages/ProfileSettings'
 import StaffAccounts from './pages/StaffAccounts'
 
 // login වී නැත්නම් /login වෙත; role නොගැළපෙනවා නම් Home වෙත
@@ -26,7 +26,8 @@ export default function App() {
                     <Route path="/register" element={<Register />} />
                     <Route path="/" element={<RequireLogin><Home /></RequireLogin>} />
                     <Route path="/profile" element={<RequireLogin roles={['STUDENT']}><Profile /></RequireLogin>} />
-                    <Route path="/saved" element={<RequireLogin roles={['STUDENT']}><MyInternships /></RequireLogin>} />
+                    <Route path="/profile/settings" element={<RequireLogin roles={['STUDENT']}><ProfileSettings /></RequireLogin>} />
+                    <Route path="/saved" element={<Navigate to="/profile" replace />} />
                     <Route path="/admin/staff" element={<RequireLogin roles={['ADMIN']}><StaffAccounts /></RequireLogin>} />
                 </Routes>
             </BrowserRouter>

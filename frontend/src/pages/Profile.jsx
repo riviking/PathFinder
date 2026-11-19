@@ -1,61 +1,56 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { api } from '../api'
+import { useAuth } from '../AuthContext'
 import { CATEGORIES } from '../categories'
+import Layout from '../Layout'
+import MyInternships from './MyInternships'
 
 export default function Profile() {
+    const { user } = useAuth()
     const [selected, setSelected] = useState([])
-    const [loading, setLoading] = useState(true)
-    const [saving, setSaving] = useState(false)
-    const [message, setMessage] = useState('')
     const [error, setError] = useState('')
 
     useEffect(() => {
         api('/api/profile')
             .then((p) => setSelected(p.categoryIds))
             .catch((err) => setError(err.message))
-            .finally(() => setLoading(false))
     }, [])
 
-    function toggle(id) {
-        setMessage('')
-        setSelected((cur) => (cur.includes(id) ? cur.filter((x) => x !== id) : [...cur, id]))
-    }
-
-    async function save() {
-        setSaving(true)
-        setError('')
-        setMessage('')
-        try {
-            const p = await api('/api/profile/categories', {
-                method: 'PUT',
-                body: { categoryIds: selected },
-            })
-            setSelected(p.categoryIds)
-            setMessage('Saved.')
-        } catch (err) {
-            setError(err.message)
-        } finally {
-            setSaving(false)
-        }
-    }
-
-    if (loading) return <p>Loading...</p>
+    const names = CATEGORIES.filter((c) => selected.includes(c.id)).map((c) => c.name)
 
     return (
-        <div style={{ display: 'grid', gap: 12, width: 360 }}>
-            <h1>My interests</h1>
-            <p>Pick the job categories you want to hear about. You will get an email when a matching internship is posted.</p>
-            {CATEGORIES.map((c) => (
-                <label key={c.id} style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
-                    <input type="checkbox" checked={selected.includes(c.id)} onChange={() => toggle(c.id)} />
-                    {c.name}
-                </label>
-            ))}
-            {error && <p style={{ color: 'tomato' }}>{error}</p>}
-            {message && <p style={{ color: 'seagreen' }}>{message}</p>}
-            <button onClick={save} disabled={saving}>{saving ? 'Saving...' : 'Save'}</button>
-            <p><Link to="/">Back</Link></p>
-        </div>
+        <Layout title="Student Profile" subtitle="View your account and internship email preferences.">
+            {error && <p className="msg error">{error}</p>}
+
+            <section className="card">
+                <h2>Account information</h2>
+                <div className="kv">
+                    <span className="label">University Email</span>
+                    <span className="value">{user.email}</span>
+                </div>
+                <p className="hint">Your account is identified by the university email you registered with.</p>
+            </section>
+
+            <section className="card">
+                <h2>Internship email preferences</h2>
+                <div className="kv">
+                    <span className="label">Selected job categories ({names.length})</span>
+                    <span className="value">{names.length ? names.join('; ') : 'None selected'}</span>
+                </div>
+                <p className="hint">You will receive internship emails only for your selected job categories.</p>
+                {names.length > 1 && (
+                    <p className="hint">An internship in {names.join(' OR ')} qualifies. Notices in other categories will not be emailed to you.</p>
+                )}
+                {names.length === 0 && (
+                    <p className="hint">No categories selected means no internship emails. Update your choices in Profile Settings.</p>
+                )}
+                <div className="btn-row">
+                    <Link className="btn" to="/profile/settings" style={{ textDecoration: 'none' }}>Profile Settings</Link>
+                </div>
+            </section>
+
+            <MyInternships />
+        </Layout>
     )
 }
