@@ -22,6 +22,7 @@ export default function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/login" element={<Login />} />
+                    <Route path="/admin/login" element={<Login admin />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/" element={<RequireLogin><Home /></RequireLogin>} />
                     <Route path="/profile" element={<RequireLogin roles={['STUDENT']}><Profile /></RequireLogin>} />
