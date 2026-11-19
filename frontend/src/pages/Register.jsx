@@ -30,11 +30,7 @@ export default function Register() {
             await login(email, password)
             navigate('/')
         } catch (err) {
-            setError(
-                err.status === 400
-                    ? 'Please check your details (valid email, password at least 8 characters).'
-                    : err.message,
-            )
+            setError(err.message)
         } finally {
             setBusy(false)
         }
