@@ -21,7 +21,9 @@ export default function MyInternships() {
 
     async function load() {
         try {
-            const list = await api('/api/profile/saved')
+            const list = (await api('/api/profile/saved')).sort(
+                (a, b) => new Date(a.deadline) - new Date(b.deadline),
+            )
             setItems(list)
             setEdits(Object.fromEntries(list.map((i) => [i.noticeId, toLocalInput(i.reminderAt)])))
         } catch (err) {
