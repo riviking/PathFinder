@@ -1,13 +1,13 @@
-package com.pathfinder.notice;
+package com.example.inter_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NoticeServiceApplication {
+public class InterServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NoticeServiceApplication.class, args);
+		SpringApplication.run(InterServiceApplication.class, args);
 	}
 
 }
