@@ -7,6 +7,7 @@ University of Kelaniya, Career Guidance Unit (CGU). Group 31.
 | Part | Folder | Port | Database | Owner |
 |---|---|---|---|---|
 | user-service (accounts, JWT, profiles, saved posts, emails) | `services/user-service` | 8081 | MongoDB `user_db` | Rivindu |
+| intern-service | `services/intern-service` | 8080 | MongoDB `intern_db` (Atlas via `MONGODB_URI`) | — |
 | notice-service (notices, flyers, job categories) | `services/notice-service` | 8082 | PostgreSQL `notice_db` (Supabase when hosted) | Yoosuf (notices), Hijaz (flyers, student pages) |
 | frontend (React + Vite) | `frontend` | 5173 | none | all |
 
@@ -37,6 +38,19 @@ You need: Docker Desktop, Node.js 20+, Java 21 and an IDE (IntelliJ).
    ```
    Open http://localhost:5173.
 6. notice-service: run it from the IDE (port 8082).
+7. intern-service: create an Atlas database user and allow your development
+   machine's IP in Network Access. From the repo root, run:
+   ```powershell
+   cd services\intern-service
+   $env:MONGODB_URI = 'mongodb+srv://<username>:<password>@<cluster-host>/intern_db?retryWrites=true&w=majority'
+   .\mvnw.cmd spring-boot:run
+   ```
+   Replace the URI placeholders with your Atlas values and URL-encode special
+   characters in the password. Keep the URI out of source control. Omit the
+   `MONGODB_URI` line to use the local Docker MongoDB at
+   `mongodb://localhost:27017/intern_db`. Atlas creates the database on first
+   write. To manually import the mock data, follow the Atlas steps in
+   [`seed/README.md`](seed/README.md).
 
 If you change user-service code, rebuild its container: `docker compose up -d --build user-service` (or stop the container and run it from the IDE; both cannot use port 8081 at the same time).
 
